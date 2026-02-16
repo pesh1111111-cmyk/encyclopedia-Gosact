@@ -1,0 +1,43 @@
+gosakt-encyclopedia/
+│
+├── index.html                    ← Главная страница
+├── timeline.html                 ← Хронология
+├── glossary.html                 ← Глоссарий
+├── references.html               ← Исторические справки
+├── search.html                   ← Поиск
+│
+├── css/
+│   ├── base.css                  ← Базовые стили
+│   ├── layout.css                ← Структура страниц
+│   ├── components.css            ← Компоненты
+│   └── document.css              ← Стили для статей
+│
+├── js/
+│   ├── navigation.js             ← Общая навигация
+│   ├── search.js                 ← Поиск
+│   └── article-viewer.js         ← Переключатель режимов просмотра
+│
+├── documents/
+│   ├── index.html                ← Список всех актов
+│   │
+│   ├── 2019/
+│   │   ├── act-2019.html         ← Оглавление Акта 2019
+│   │   └── articles/
+│   │       ├── preamble.html
+│   │       ├── intro.html
+│   │       ├── article-01.html
+│   │       ├── article-02.html
+│   │       └── ...
+│   │
+│   ├── 2021/
+│   │   ├── act-2021.html
+│   │   └── articles/
+│   │
+│   └── 2025/
+│       ├── act-2025.html
+│       └── articles/
+│
+└── data/                          ← JSON с данными (опционально)
+    ├── glossary.json
+    ├── timeline.json
+    └── articles-meta.json
