@@ -3,268 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Онлайн-энциклопедия Государственных Актов СССР</title>
+    <title>Энциклопедия Государственных Актов СССР (2019-2026)</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
+
     <header>
-        <h1>📚 Онлайн-энциклопедия Государственных Актов СССР</h1>
-        <p class="subtitle">Систематизация, анализ и пояснения к документам</p>
+        <h1>📋 Энциклопедия Государственных Актов СССР</h1>
+        <p class="subtitle">Академический анализ документов 2019-2026 годов</p>
     </header>
 
+    <!-- Навигация -->
     <nav class="main-nav">
         <div class="container">
             <a href="index.html" class="active">🏠 Главная</a>
             <a href="timeline.html">📅 Хронология</a>
             <a href="glossary.html">📖 Глоссарий</a>
-            <a href="references.html">🔍 Исторические справки</a>
+            <a href="references.html">🔍 Справки</a>
         </div>
     </nav>
 
-    <main class="container" style="max-width: 1400px; margin: 2rem auto; padding: 0 2rem;">
+    <main class="container" style="max-width: 1200px; margin: 2rem auto; padding: 0 2rem;">
 
-        <!-- ПРИВЕТСТВЕННЫЙ БЛОК -->
-        <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 15px; text-align: center; margin-bottom: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">Добро пожаловать!</h2>
-            <p style="font-size: 1.3rem; line-height: 1.8; max-width: 900px; margin: 0 auto;">
-                Эта энциклопедия создана для систематизации, анализа и понимания Государственных Актов СССР. 
-                Здесь вы найдёте структурированные статьи, глоссарий терминов, исторические справки и хронологию событий.
-            </p>
+        <!-- Статистика -->
+        <section style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2 style="color: #8B0000; margin-bottom: 1.5rem;">📊 Статистика проекта</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">60</div>
+                    <div style="color: #666;">Статей готово</div>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">144</div>
+                    <div style="color: #666;">Всего статей (Акт 2019-12)</div>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">42%</div>
+                    <div style="color: #666;">Прогресс</div>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">73+</div>
+                    <div style="color: #666;">Актов (2019-2025)</div>
+                </div>
+            </div>
+
+            <!-- Прогресс-бар -->
+            <div style="margin-top: 2rem;">
+                <p style="color: #666; margin-bottom: 0.5rem;"><strong>Акт 2019-12:</strong> 60 из 144 статей</p>
+                <div style="width: 100%; height: 30px; background: #e0e0e0; border-radius: 15px; overflow: hidden;">
+                    <div style="width: 42%; height: 100%; background: linear-gradient(90deg, #28a745 0%, #34ce57 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                        42%
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Быстрый доступ к Актам -->
+        <section style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2 style="color: #8B0000; margin-bottom: 1.5rem;">📚 Государственные Акты СССР</h2>
 
-        <!-- СТАТИСТИКА -->
-        <section class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-            <div class="stat-card" style="background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <div style="font-size: 3rem; color: #8B0000; font-weight: bold;">8</div>
-                <div style="color: #666; font-size: 1.1rem;">Статей создано</div>
+            <!-- Акт 2019-12 -->
+            <div style="background: linear-gradient(135deg, #8B0000 0%, #CD5C5C 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 1.5rem;">
+                <h3 style="color: white; margin: 0 0 0.5rem 0;">🔴 Акт за декабрь 2019 года</h3>
+                <p style="margin: 0 0 1rem 0; opacity: 0.9;">Первый Государственный Акт СССР • 144 статьи • 60 готово (42%)</p>
+                <a href="documents/2019/act-2019-12/act-2019-12.html" style="display: inline-block; background: white; color: #8B0000; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold;">
+                    Открыть оглавление →
+                </a>
             </div>
-            <div class="stat-card" style="background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <div style="font-size: 3rem; color: #8B0000; font-weight: bold;">30</div>
-                <div style="color: #666; font-size: 1.1rem;">Терминов в глоссарии</div>
-            </div>
-            <div class="stat-card" style="background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <div style="font-size: 3rem; color: #8B0000; font-weight: bold;">7</div>
-                <div style="color: #666; font-size: 1.1rem;">Исторических справок</div>
-            </div>
-            <div class="stat-card" style="background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <div style="font-size: 3rem; color: #8B0000; font-weight: bold;">144</div>
-                <div style="color: #666; font-size: 1.1rem;">Статей всего (план)</div>
-            </div>
-        </section>
 
-        <!-- ГОСУДАРСТВЕННЫЕ АКТЫ -->
-        <section style="margin-bottom: 3rem;">
-            <h2 style="color: #8B0000; font-size: 2rem; margin-bottom: 2rem; border-bottom: 3px solid #8B0000; padding-bottom: 0.5rem;">
-                📜 Государственные Акты СССР
-            </h2>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-
-                <!-- АКТ 2019 -->
-                <div class="card" style="border-left: 5px solid #8B0000;">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                        <h3 style="color: #8B0000; margin: 0;">Государственный Акт СССР за 2019 год</h3>
-                        <span class="tag tag-active">В работе</span>
-                    </div>
-                    <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
-                        Основополагающий документ, определяющий статус Союза ССР, Российской Федерации и прав граждан СССР.
-                    </p>
-                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
-                        <strong>Прогресс:</strong>
-                        <div style="background: #e0e0e0; height: 20px; border-radius: 10px; margin-top: 0.5rem; overflow: hidden;">
-                            <div style="background: linear-gradient(90deg, #8B0000, #c41e3a); height: 100%; width: 6%; transition: width 0.3s;"></div>
-                        </div>
-                        <div style="margin-top: 0.5rem; color: #666;">8 из 144 статей (6%)</div>
-                    </div>
-                    <a href="documents/2019/act-2019.html" class="btn">Перейти к документу →</a>
-                </div>
-
-                <!-- АКТ 2020 (ЗАГЛУШКА) -->
-                <div class="card" style="opacity: 0.6;">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                        <h3 style="color: #666; margin: 0;">Государственный Акт СССР за 2020 год</h3>
-                        <span class="tag" style="background: #e0e0e0; color: #666;">Скоро</span>
-                    </div>
-                    <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
-                        Документ будет добавлен после завершения работы над Актом 2019 года.
-                    </p>
-                    <button class="btn" style="opacity: 0.5; cursor: not-allowed;" disabled>В разработке</button>
-                </div>
-
-                <!-- АКТ 2021 (ЗАГЛУШКА) -->
-                <div class="card" style="opacity: 0.6;">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                        <h3 style="color: #666; margin: 0;">Государственный Акт СССР за 2021 год</h3>
-                        <span class="tag" style="background: #e0e0e0; color: #666;">Скоро</span>
-                    </div>
-                    <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">
-                        Документ будет добавлен после завершения работы над предыдущими актами.
-                    </p>
-                    <button class="btn" style="opacity: 0.5; cursor: not-allowed;" disabled>В разработке</button>
-                </div>
-
+            <!-- Акты 2020-2025 -->
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #999;">
+                <h4 style="color: #666; margin: 0 0 0.5rem 0;">⏳ Акты 2020-2025 годов</h4>
+                <p style="color: #666; margin: 0;">
+                    По 12 актов ежегодно (январь-декабрь) • В разработке<br>
+                    <small>Всего планируется: 6 лет × 12 месяцев = 72 акта + внеочередные</small>
+                </p>
             </div>
         </section>
 
-        <!-- ПОСЛЕДНИЕ ОБНОВЛЕНИЯ -->
-        <section style="margin-bottom: 3rem;">
-            <h2 style="color: #8B0000; font-size: 2rem; margin-bottom: 2rem; border-bottom: 3px solid #8B0000; padding-bottom: 0.5rem;">
-                🔄 Последние обновления
-            </h2>
-
-            <div style="display: grid; gap: 1.5rem;">
-
-                <div class="card" style="border-left: 4px solid #28a745;">
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div style="flex: 1;">
-                            <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">✅ Статьи 4-6 созданы</h4>
-                            <p style="color: #666; margin: 0;">Добавлены статьи о РФ как британской директории, непризнании трастов РСФСР и прекращении признания РФ</p>
-                        </div>
-                        <span style="color: #999; white-space: nowrap; margin-left: 1rem;">Сегодня</span>
-                    </div>
-                </div>
-
-                <div class="card" style="border-left: 4px solid #28a745;">
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div style="flex: 1;">
-                            <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">✅ Глоссарий обновлён</h4>
-                            <p style="color: #666; margin: 0;">Добавлено 30 терминов с определениями и перекрёстными ссылками</p>
-                        </div>
-                        <span style="color: #999; white-space: nowrap; margin-left: 1rem;">Сегодня</span>
-                    </div>
-                </div>
-
-                <div class="card" style="border-left: 4px solid #28a745;">
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div style="flex: 1;">
-                            <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">✅ Исторические справки дополнены</h4>
-                            <p style="color: #666; margin: 0;">Добавлены справки по Конкордату 1933, Пандектам Юстиниана, трасту «Новый Мировой Порядок»</p>
-                        </div>
-                        <span style="color: #999; white-space: nowrap; margin-left: 1rem;">Сегодня</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- БЫСТРЫЙ ДОСТУП -->
-        <section style="margin-bottom: 3rem;">
-            <h2 style="color: #8B0000; font-size: 2rem; margin-bottom: 2rem; border-bottom: 3px solid #8B0000; padding-bottom: 0.5rem;">
-                🚀 Быстрый доступ
-            </h2>
-
+        <!-- Быстрые ссылки на ключевые статьи -->
+        <section style="margin-bottom: 2rem;">
+            <h2 style="color: #8B0000; margin-bottom: 1.5rem;">🚀 Ключевые статьи Акта 2019-12</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
 
-                <a href="documents/2019/articles/preamble.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📋 Преамбула</h4>
+                <a href="documents/2019/act-2019-12/articles/preamble.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📋 Преамбула</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Природа Акта, действие во времени, статус граждан</p>
                 </a>
 
-                <a href="documents/2019/articles/intro.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📖 Введение</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Отроки Божьи, обучение, экзамен 2025 года</p>
-                </a>
-
-                <a href="documents/2019/articles/article-01.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 1</h4>
+                <a href="documents/2019/act-2019-12/articles/article-01.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 1</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Регистрация АО «Российская Федерация»</p>
                 </a>
 
-                <a href="documents/2019/articles/article-02.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 2</h4>
+                <a href="documents/2019/act-2019-12/articles/article-02.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 2</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Тайное Мировое Правительство (1783)</p>
                 </a>
 
-                <a href="documents/2019/articles/article-03.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 3</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Инструменты Мирового Правительства</p>
+                <a href="documents/2019/act-2019-12/articles/article-31.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 31</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Паспорт СССР образца 1974 года</p>
                 </a>
 
-                <a href="documents/2019/articles/article-04.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 4</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">РФ как британская директория</p>
+                <a href="documents/2019/act-2019-12/articles/article-35.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 35</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Форма 1П — отказ от юрисдикции РФ</p>
                 </a>
 
-                <a href="documents/2019/articles/article-05.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 5</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Непризнание трастов РСФСР (1925-2025)</p>
+                <a href="documents/2019/act-2019-12/articles/article-49.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 49</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Статус граждан как римских рабов</p>
                 </a>
 
-                <a href="documents/2019/articles/article-06.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #8B0000;">
-                    <h4 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 6</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Прекращение признания РФ (с 01.01.2018)</p>
+                <a href="documents/2019/act-2019-12/articles/article-56.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 56</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Продажа граждан Обществу Иисуса</p>
                 </a>
 
-                <a href="glossary.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #667eea;">
-                    <h4 style="color: #667eea; margin: 0 0 0.5rem 0;">📖 Глоссарий</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">30 терминов с определениями</p>
-                </a>
-
-                <a href="references.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #667eea;">
-                    <h4 style="color: #667eea; margin: 0 0 0.5rem 0;">🔍 Исторические справки</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Контекст и пояснения к документам</p>
-                </a>
-
-                <a href="timeline.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #667eea;">
-                    <h4 style="color: #667eea; margin: 0 0 0.5rem 0;">📅 Хронология</h4>
+                <a href="timeline.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea;">
+                    <h3 style="color: #667eea; margin: 0 0 0.5rem 0;">📅 Хронология</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">События в хронологическом порядке</p>
                 </a>
 
-                <a href="documents/2019/act-2019.html" class="card" style="text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #764ba2;">
-                    <h4 style="color: #764ba2; margin: 0 0 0.5rem 0;">📋 Оглавление Акта 2019</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Полный список статей</p>
+                <a href="glossary.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea;">
+                    <h3 style="color: #667eea; margin: 0 0 0.5rem 0;">📖 Глоссарий</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Термины и определения</p>
+                </a>
+
+                <a href="references.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea;">
+                    <h3 style="color: #667eea; margin: 0 0 0.5rem 0;">🔍 Исторические справки</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Контекст и пояснения</p>
                 </a>
 
             </div>
         </section>
 
-        <!-- О ПРОЕКТЕ -->
-        <section style="margin-bottom: 3rem;">
-            <h2 style="color: #8B0000; font-size: 2rem; margin-bottom: 2rem; border-bottom: 3px solid #8B0000; padding-bottom: 0.5rem;">
-                ℹ️ О проекте
-            </h2>
+        <!-- О проекте -->
+        <section style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2 style="color: #8B0000; margin-bottom: 1rem;">ℹ️ О проекте</h2>
+            <p style="line-height: 1.8; color: #555;">
+                Данная энциклопедия представляет собой академический анализ Государственных Актов СССР 
+                за период 2019-2026 годов. Проект создан для систематизации информации и облегчения 
+                навигации по документам.
+            </p>
+            <p style="line-height: 1.8; color: #555; margin-top: 1rem;">
+                Все материалы представлены в форме объективного описания содержания документов 
+                с использованием юридической терминологии.
+            </p>
+            <p style="line-height: 1.8; color: #555; margin-top: 1rem;">
+                <strong>Источник документов:</strong> <a href="https://pravosudija.net" target="_blank" style="color: #8B0000;">pravosudija.net</a>
+            </p>
+        </section>
 
-            <div class="card">
-                <h3 style="color: #8B0000; margin-top: 0;">Цель энциклопедии</h3>
-                <p style="line-height: 1.8; color: #555;">
-                    Данная онлайн-энциклопедия создана для систематизации и структурированного представления 
-                    Государственных Актов СССР. Каждая статья разбита на логические блоки, снабжена пояснениями, 
-                    перекрёстными ссылками и связями с историческими событиями.
-                </p>
-
-                <h3 style="color: #8B0000;">Особенности</h3>
-                <ul style="line-height: 2; color: #555;">
-                    <li>✅ <strong>Структурированное изложение</strong> — каждая статья разбита на смысловые блоки</li>
-                    <li>✅ <strong>Два режима просмотра</strong> — структурированный и оригинальный текст</li>
-                    <li>✅ <strong>Глоссарий терминов</strong> — определения ключевых понятий</li>
-                    <li>✅ <strong>Исторические справки</strong> — контекст и пояснения к событиям</li>
-                    <li>✅ <strong>Перекрёстные ссылки</strong> — связи между статьями и терминами</li>
-                    <li>✅ <strong>Хронология</strong> — события в хронологическом порядке</li>
-                </ul>
-
-                <h3 style="color: #8B0000;">Источник</h3>
-                <p style="line-height: 1.8; color: #555;">
-                    Основной источник документов: <a href="https://pravosudija.net" target="_blank" style="color: #8B0000; font-weight: bold;">pravosudija.net</a>
-                </p>
+        <!-- Ключевые концепции -->
+        <section style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
+            <h2 style="color: #8B0000; margin-bottom: 1.5rem;">🔑 Ключевые концепции</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #8B0000; margin-top: 0;">Траст РФ</h4>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Российская Федерация как доверительное управление</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #8B0000; margin-top: 0;">Форма 1П</h4>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Добровольный отказ от юрисдикции РФ</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #8B0000; margin-top: 0;">Паспорт СССР 1974</h4>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Единственный легитимный документ</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #8B0000; margin-top: 0;">Морское право</h4>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Граждане РФ как "груз" на судне</p>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>© 2024 Онлайн-энциклопедия Государственных Актов СССР</p>
-        <p>Источник: <a href="https://pravosudija.net" target="_blank">pravosudija.net</a></p>
+    <footer style="background: #2c3e50; color: white; text-align: center; padding: 2rem; margin-top: 4rem;">
+        <p style="margin: 0;">© 2019-2026 Энциклопедия Государственных Актов СССР</p>
+        <p style="margin: 0.5rem 0 0 0; opacity: 0.8;">
+            <a href="https://pravosudija.net" target="_blank" style="color: #3498db; text-decoration: none;">pravosudija.net</a>
+        </p>
     </footer>
-
-    <style>
-        /* Hover эффекты для карточек быстрого доступа */
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-    </style>
 
 </body>
 </html>
