@@ -32,7 +32,7 @@
             <h2 style="color: #8B0000; margin-bottom: 1.5rem;">📊 Статистика проекта</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
                 <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">60</div>
+                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">97</div>
                     <div style="color: #666;">Статей готово</div>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
@@ -40,7 +40,7 @@
                     <div style="color: #666;">Всего статей (Акт 2019-12)</div>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                    <div style="font-size: 3rem; font-weight: bold; color: #8B0000;">42%</div>
+                    <div style="font-size: 3rem; font-weight: bold; color: #28a745;">67%</div>
                     <div style="color: #666;">Прогресс</div>
                 </div>
                 <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
@@ -51,22 +51,35 @@
 
             <!-- Прогресс-бар -->
             <div style="margin-top: 2rem;">
-                <p style="color: #666; margin-bottom: 0.5rem;"><strong>Акт 2019-12:</strong> 60 из 144 статей</p>
+                <p style="color: #666; margin-bottom: 0.5rem;">
+                    <strong>Акт 2019-12:</strong> 97 из 144 статей
+                    <span style="float: right; color: #28a745; font-weight: bold;">67%</span>
+                </p>
                 <div style="width: 100%; height: 30px; background: #e0e0e0; border-radius: 15px; overflow: hidden;">
-                    <div style="width: 42%; height: 100%; background: linear-gradient(90deg, #28a745 0%, #34ce57 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
-                        42%
+                    <div style="width: 67%; height: 100%; background: linear-gradient(90deg, #28a745 0%, #34ce57 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; transition: width 0.5s ease;">
+                        67%
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Быстрый доступ к Актам -->
         <section style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
             <h2 style="color: #8B0000; margin-bottom: 1.5rem;">📚 Государственные Акты СССР</h2>
 
             <!-- Акт 2019-12 -->
             <div style="background: linear-gradient(135deg, #8B0000 0%, #CD5C5C 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 1.5rem;">
-                <h3 style="color: white; margin: 0 0 0.5rem 0;">🔴 Акт за декабрь 2019 года</h3>
-                <p style="margin: 0 0 1rem 0; opacity: 0.9;">Первый Государственный Акт СССР • 144 статьи • 60 готово (42%)</p>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <h3 style="color: white; margin: 0 0 0.5rem 0;">🔴 Акт за декабрь 2019 года</h3>
+                        <p style="margin: 0 0 0.25rem 0; opacity: 0.9;">Первый Государственный Акт СССР • 144 статьи</p>
+                        <p style="margin: 0 0 1rem 0; opacity: 0.8; font-size: 0.9rem;">✅ 97 статей готово &nbsp;|&nbsp; ⏳ 47 в разработке</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); padding: 0.75rem 1.25rem; border-radius: 8px; text-align: center;">
+                        <div style="font-size: 2rem; font-weight: bold;">67%</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9;">завершено</div>
+                    </div>
+                </div>
                 <a href="documents/2019/act-2019-12/act-2019-12.html" style="display: inline-block; background: white; color: #8B0000; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold;">
                     Открыть оглавление →
                 </a>
@@ -87,52 +100,106 @@
             <h2 style="color: #8B0000; margin-bottom: 1.5rem;">🚀 Ключевые статьи Акта 2019-12</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
 
-                <a href="documents/2019/act-2019-12/articles/preamble.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/preamble.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📋 Преамбула</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Природа Акта, действие во времени, статус граждан</p>
                 </a>
 
-                <a href="documents/2019/act-2019-12/articles/article-01.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/article-01.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 1</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Регистрация АО «Российская Федерация»</p>
                 </a>
 
-                <a href="documents/2019/act-2019-12/articles/article-02.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/article-02.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 2</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Тайное Мировое Правительство (1783)</p>
                 </a>
 
-                <a href="documents/2019/act-2019-12/articles/article-31.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/article-31.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 31</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Паспорт СССР образца 1974 года</p>
                 </a>
 
-                <a href="documents/2019/act-2019-12/articles/article-35.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/article-35.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 35</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Форма 1П — отказ от юрисдикции РФ</p>
                 </a>
 
-                <a href="documents/2019/act-2019-12/articles/article-49.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/article-49.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 49</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Статус граждан как римских рабов</p>
                 </a>
 
-                <a href="documents/2019/act-2019-12/articles/article-56.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000;">
+                <a href="documents/2019/act-2019-12/articles/article-56.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 56</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Продажа граждан Обществу Иисуса</p>
                 </a>
 
-                <a href="timeline.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea;">
+                <a href="documents/2019/act-2019-12/articles/article-61.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 61</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Гарант Конституции РФ как Председатель Ликвидационной комиссии</p>
+                </a>
+
+                <a href="documents/2019/act-2019-12/articles/article-80.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 80</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Золотой запас и валютные резервы СССР</p>
+                </a>
+
+                <a href="documents/2019/act-2019-12/articles/article-93.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #8B0000; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+                    <h3 style="color: #8B0000; margin: 0 0 0.5rem 0;">📄 Статья 93</h3>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Советское уголовное законодательство и ответственность за измену</p>
+                </a>
+
+                <a href="timeline.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #667eea; margin: 0 0 0.5rem 0;">📅 Хронология</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">События в хронологическом порядке</p>
                 </a>
 
-                <a href="glossary.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea;">
+                <a href="glossary.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #667eea; margin: 0 0 0.5rem 0;">📖 Глоссарий</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Термины и определения</p>
                 </a>
 
-                <a href="references.html" style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea;">
+                <a href="references.html"
+                   style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: inherit; border-left: 4px solid #667eea; transition: transform 0.2s, box-shadow 0.2s;"
+                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
                     <h3 style="color: #667eea; margin: 0 0 0.5rem 0;">🔍 Исторические справки</h3>
                     <p style="color: #666; margin: 0; font-size: 0.95rem;">Контекст и пояснения</p>
                 </a>
@@ -144,16 +211,17 @@
         <section style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
             <h2 style="color: #8B0000; margin-bottom: 1rem;">ℹ️ О проекте</h2>
             <p style="line-height: 1.8; color: #555;">
-                Данная энциклопедия представляет собой академический анализ Государственных Актов СССР 
-                за период 2019-2026 годов. Проект создан для систематизации информации и облегчения 
+                Данная энциклопедия представляет собой академический анализ Государственных Актов СССР
+                за период 2019-2026 годов. Проект создан для систематизации информации и облегчения
                 навигации по документам.
             </p>
             <p style="line-height: 1.8; color: #555; margin-top: 1rem;">
-                Все материалы представлены в форме объективного описания содержания документов 
+                Все материалы представлены в форме объективного описания содержания документов
                 с использованием юридической терминологии.
             </p>
             <p style="line-height: 1.8; color: #555; margin-top: 1rem;">
-                <strong>Источник документов:</strong> <a href="https://pravosudija.net" target="_blank" style="color: #8B0000;">pravosudija.net</a>
+                <strong>Источник документов:</strong>
+                <a href="https://pravosudija.net" target="_blank" style="color: #8B0000;">pravosudija.net</a>
             </p>
         </section>
 
@@ -161,32 +229,125 @@
         <section style="background: #f8f9fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
             <h2 style="color: #8B0000; margin-bottom: 1.5rem;">🔑 Ключевые концепции</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+
                 <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
                     <h4 style="color: #8B0000; margin-top: 0;">Траст РФ</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Российская Федерация как доверительное управление</p>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Российская Федерация как доверительное управление имуществом СССР</p>
                 </div>
+
                 <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
                     <h4 style="color: #8B0000; margin-top: 0;">Форма 1П</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Добровольный отказ от юрисдикции РФ</p>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Добровольный отказ от юрисдикции РФ и переход под юрисдикцию СССР</p>
                 </div>
+
                 <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
                     <h4 style="color: #8B0000; margin-top: 0;">Паспорт СССР 1974</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Единственный легитимный документ</p>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Единственный легитимный документ гражданина СССР</p>
                 </div>
+
                 <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
                     <h4 style="color: #8B0000; margin-top: 0;">Морское право</h4>
-                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Граждане РФ как "груз" на судне</p>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Граждане РФ как «груз» на судне «Россия — страна возможностей»</p>
                 </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #8B0000; margin-top: 0;">Ликвидация РФ</h4>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Процедура ликвидации АО «РФ» и передача активов Госбанку СССР</p>
+                </div>
+
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h4 style="color: #8B0000; margin-top: 0;">Советский трибунал</h4>
+                    <p style="color: #666; margin: 0; font-size: 0.95rem;">Суд над должностными лицами РФ по законодательству СССР</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Последние добавленные статьи -->
+        <section style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <h2 style="color: #8B0000; margin-bottom: 1.5rem;">🆕 Последние добавленные статьи</h2>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-97.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 97</strong> — Амнистия для граждан, добровольно признавших гражданство СССР
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-96.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 96</strong> — Реабилитация граждан, незаконно осуждённых органами РФ
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-95.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 95</strong> — Трибунал СССР для суда над предателями и коллаборационистами
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-94.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 94</strong> — Ответственность должностных лиц РФ по законам СССР
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-93.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 93</strong> — Советское уголовное законодательство и ответственность за измену
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-92.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 92</strong> — Государственный комитет статистики СССР и учёт населения
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-91.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 91</strong> — Государственное планирование и восстановление Госплана СССР
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-90.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 90</strong> — Профсоюзы СССР и коллективная защита трудящихся
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-89.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 89</strong> — Советское трудовое законодательство и защита работников
+                    </a>
+                </li>
+                <li style="padding: 0.6rem 0; display: flex; align-items: center; gap: 0.75rem;">
+                    <span style="color: #28a745;">✅</span>
+                    <a href="documents/2019/act-2019-12/articles/article-88.html" style="color: #333; text-decoration: none;">
+                        <strong>Статья 88</strong> — Пенсионное обеспечение граждан СССР
+                    </a>
+                </li>
+            </ul>
+            <div style="margin-top: 1.5rem; text-align: center;">
+                <a href="documents/2019/act-2019-12/act-2019-12.html"
+                   style="display: inline-block; background: #8B0000; color: white; padding: 0.75rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold;">
+                    Все статьи в оглавлении →
+                </a>
             </div>
         </section>
 
     </main>
 
     <footer style="background: #2c3e50; color: white; text-align: center; padding: 2rem; margin-top: 4rem;">
-        <p style="margin: 0;">© 2019-2026 Энциклопедия Государственных Актов СССР</p>
-        <p style="margin: 0.5rem 0 0 0; opacity: 0.8;">
-            <a href="https://pravosudija.net" target="_blank" style="color: #3498db; text-decoration: none;">pravosudija.net</a>
-        </p>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">© 2019-2026 Энциклопедия Государственных Актов СССР</p>
+            <p style="margin: 0 0 0.5rem 0; opacity: 0.8;">
+                <a href="https://pravosudija.net" target="_blank" style="color: #3498db; text-decoration: none;">pravosudija.net</a>
+            </p>
+            <p style="margin: 0; opacity: 0.6; font-size: 0.85rem;">
+                Акт 2019-12 | Регистрационный № 002.162 | Утверждён 08.03.2020
+            </p>
+        </div>
     </footer>
 
 </body>
